@@ -3,8 +3,7 @@ if not present then
    return
 end
 
-require('nvim-tree').setup() 
-
+require("nvim-tree").setup()
 
 local tree_cb = tree_c.nvim_tree_callback
 local g = vim.g

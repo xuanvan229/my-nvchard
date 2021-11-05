@@ -16,41 +16,40 @@ return packer.startup(function()
       "Nvchad/extensions",
    }
 
-  use {
-    "github/copilot.vim"
-  }
+   use {
+      "github/copilot.vim",
+   }
 
    use {
       "nvim-lua/plenary.nvim",
    }
-    use {
-      'lewis6991/gitsigns.nvim',
-      requires = {
-        'nvim-lua/plenary.nvim'
-      }
-    }
    use {
-    "pangloss/vim-javascript"  
-  }
- 
-   use({'rose-pine/neovim'})
+      "lewis6991/gitsigns.nvim",
+      requires = {
+         "nvim-lua/plenary.nvim",
+      },
+   }
+   use {
+      "pangloss/vim-javascript",
+   }
 
+   use { "rose-pine/neovim" }
 
-     use {
-     "mxw/vim-jsx"
+   use {
+      "mxw/vim-jsx",
    }
 
    use {
-     "nvim-lua/completion-nvim"
+      "nvim-lua/completion-nvim",
    }
 
    use {
       "wbthomason/packer.nvim",
       event = "VimEnter",
    }
-  
-   use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
-   
+
+   use { "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" }
+
    use {
       "NvChad/nvim-base16.lua",
       after = "packer.nvim",
@@ -162,7 +161,7 @@ return packer.startup(function()
    }
 
    use {
-     "glepnir/lspsaga.nvim",
+      "glepnir/lspsaga.nvim",
    }
 
    use {
@@ -311,7 +310,7 @@ return packer.startup(function()
          require("core.mappings").nvimtree()
       end,
    }
- 
+
    use {
       "nvim-telescope/telescope.nvim",
       cmd = "Telescope",
